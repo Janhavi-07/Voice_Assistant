@@ -36,6 +36,22 @@
     pip install pyttsx3 requests feedparser pyjokes SpeechRecognition Pillow
     ```
 
+## Weather API Key 💡
+
+- The weather feature in this project uses an API from **OpenWeatherMap**. The API key is **hardcoded** in the code (for learning purposes only) and **is subject to limited usage**.
+- If you wish to **use the weather functionality**, it is recommended that you **replace the existing API key** with your own. You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api).
+
+### Steps to Replace the API Key:
+1. Go to [OpenWeatherMap](https://openweathermap.org/api) and sign up for a free API key.
+2. In the code, locate this line:
+    ```python
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=YOUR_API_KEY&units=metric"
+    ```
+3. Replace `YOUR_API_KEY` with the key you received from OpenWeatherMap.
+4. Save the changes and run the application.
+
+> **Note**: The current API key is free and has a limited number of requests per minute. If you exceed the quota, the weather feature may stop working.
+
 ## Usage 🚀
 
 1. Navigate to the project folder where you downloaded or cloned the repository.
